@@ -1,0 +1,171 @@
+/* Ümumi tənzimləmələr */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding-top: 70px; 
+}
+
+nav {
+    background-color: #0b4a99;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tecili {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    z-index: 90;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boyuk-xeber {
+    width: 60%; 
+    position: relative;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sag-xeberler {
+    width: 38%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between; 
+}
+
+.kicik-xeber {
+    width: 49%; 
+    height: 190px; 
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.boyuk-xeber img, .kicik-xeber img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.1));
+    z-index: 1;
+}
+
+.yazi {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+    font-size: 22px;
+    max-width: 90%;
+}
+
+.kicik-yazi {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;
+    z-index: 2;
+    font-size: 13px; 
+    max-width: 90%;
+    font-weight: bold;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff6600;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 3;
+}
+
+.alt-bolme {
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+.gunun-movzusu {
+    background-color: #ffcc00; 
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block; 
+    padding: 10px 25px; 
+    border-radius: 4px; 
+}
+
+
+.yuxari-btn button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 200;
+}
